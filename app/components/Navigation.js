@@ -32,7 +32,11 @@ export default function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <Link href="/" className="navbar-brand" style={{ fontSize: "1.25rem", color: baseColor }}>
+        <Link
+          href="/"
+          className="navbar-brand"
+          style={{ fontSize: "1.25rem", color: baseColor }}
+        >
           Phakjiraaaaa
         </Link>
         <button
@@ -48,7 +52,12 @@ export default function Navigation() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            {[{ href: "/home", label: "หน้าแรก" }, { href: "/about", label: "เกี่ยวกับ" }, { href: "/service", label: "บริการ" }, { href: "/contact", label: "ติดต่อ" }].map(({ href, label }) => (
+            {[
+              { href: "/", label: "หน้าแรก" },
+              { href: "/about", label: "เกี่ยวกับ" },
+              { href: "/service", label: "บริการ" },
+              { href: "/contact", label: "ติดต่อ" },
+            ].map(({ href, label }) => (
               <li className="nav-item" key={href}>
                 <Link
                   href={href}
@@ -61,7 +70,6 @@ export default function Navigation() {
                 </Link>
               </li>
             ))}
-
           </ul>
         </div>
       </div>
