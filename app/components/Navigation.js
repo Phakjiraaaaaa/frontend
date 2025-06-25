@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navigation() {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
@@ -18,7 +20,6 @@ export default function Navigation() {
     display: "inline-block",
   };
 
-  // ลบ type annotation ออก
   const handleMouseEnter = (e) => {
     e.currentTarget.style.transform = "scale(1.1)";
     e.currentTarget.style.color = hoverColor;
@@ -27,6 +28,15 @@ export default function Navigation() {
   const handleMouseLeave = (e) => {
     e.currentTarget.style.transform = "scale(1.0)";
     e.currentTarget.style.color = baseColor;
+  };
+
+  const handleToggle = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  const handleLinkClick = () => {
+    // หุบ navbar หลังจากคลิก
+    setIsNavbarOpen(false);
   };
 
   return (
@@ -42,15 +52,14 @@ export default function Navigation() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={handleToggle}
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isNavbarOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav">
             {[
               { href: "/", label: "หน้าแรก" },
@@ -65,6 +74,7 @@ export default function Navigation() {
                   style={navLinkStyle}
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
+                  onClick={handleLinkClick}
                 >
                   {label}
                 </Link>
