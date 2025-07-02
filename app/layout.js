@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
 
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -19,9 +20,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
+        <div className='container-fluid'>
+          <div className='row'>
+          <div className='col'>
         <Navigation />
+        </div>
+        </div>
         {children}
         <Footer />
+      </div>
       </body>
     </html>
   );

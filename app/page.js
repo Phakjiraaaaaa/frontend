@@ -1,9 +1,11 @@
 import Carousel from "./components/Carousel";
+import Cards from "./components/cards";
+
 export default function Home() {
   return (
-   <>
-  <Carousel/>
-   <h1  className="text-4xl text-center text-blue-700">Miss Phakjira Pakphian</h1>
-   </>
+    <>
+      <Carousel />
+      <Cards />
+    </>
   );
 }

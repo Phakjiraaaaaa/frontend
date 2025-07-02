@@ -4,64 +4,64 @@ export default function Footer() {
       <footer className="py-5">
         <div className="row">
           <div className="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+            <h5>แหล่งข้อมูล</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Home</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">ค้นหาหน้าร้าน</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Features</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">ตัวค้นหารองเท้าวิ่ง</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Pricing</a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">FAQs</a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">About</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">สมัครเป็น Member</a>
               </li>
             </ul>
           </div>
 
           <div className="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+            <h5>ช่วยเหลือ</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Home</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">รับความช่วยเหลือ</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Features</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">สถานะคำสั่งซื้อ</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Pricing</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">การส่งมอบ</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">FAQs</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">การคืนสินค้า</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">About</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">ทางเลือกชำระเงิน</a>
+              </li>
+               <li className="nav-item mb-2">
+                <a href="#" className="nav-link p-0 text-body-secondary">ติดต่อเรา</a>
               </li>
             </ul>
           </div>
 
           <div className="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+            <h5>บริษัท</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Home</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">เกี่ยวกับ Nike</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Features</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">ร่วมงานกับเรา</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">Pricing</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">ร่วมลงทุนกับเรา</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">FAQs</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">ความยั่งยืน</a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">About</a>
+                <a href="#" className="nav-link p-0 text-body-secondary">ผลกระทบ</a>
+              </li>
+               <li className="nav-item mb-2">
+                <a href="#" className="nav-link p-0 text-body-secondary">แจ้งข้อกังวล</a>
               </li>
             </ul>
           </div>

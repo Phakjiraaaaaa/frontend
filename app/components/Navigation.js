@@ -35,12 +35,18 @@ export default function Navigation() {
   };
 
   const handleLinkClick = () => {
-    // หุบ navbar หลังจากคลิก
     setIsNavbarOpen(false);
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav
+      className="navbar navbar-expand-lg"
+      style={{
+        backgroundColor: "#f0f0f0", // ✅ พื้นหลังสีเทา
+        borderBottom: "1px solid #ccc",
+        padding: "0.75rem 1rem",
+      }}
+    >
       <div className="container-fluid">
         <Link
           href="/"
@@ -59,7 +65,12 @@ export default function Navigation() {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`} id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${
+            isNavbarOpen ? "show" : ""
+          }`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
             {[
               { href: "/", label: "หน้าแรก" },
